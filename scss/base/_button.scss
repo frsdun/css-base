@@ -1,0 +1,97 @@
+/* ------------------------ Button ------------------------ */
+
+// Exposes 3 class names
+// 1. button
+// 2. button-outline
+// 3. button-clear
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']{
+	background-color: $base-color-button-background-alternate;
+	color: $base-color-button-background;
+	border: .1rem solid $base-color-button-border;
+	border-radius: .4rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.1rem;
+	font-weight: 300;
+	height: 3.8rem;
+	letter-spacing: .1rem;
+	line-height: 3.8rem;
+	padding: 0 3.0rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	@extend %shadow-primary;
+	@extend %transition-all;
+
+	//&:focus,
+	&:hover {
+		background-color: $base-color-button-background;
+		border-color: $base-color-button-background;
+		color: $base-color-button-text;
+        outline: 0;
+		//@extend %shadow;
+	}
+
+	// &:active{
+	// 	background-color: $base-color-button-text
+	// 	border-color: $base-color-button-background
+	// 	color: $base-color-button-background
+	// 	outline: 0
+	//}
+
+	&[disabled]{
+		cursor: default;
+		opacity: .5;
+
+		//&:focus,
+		&:hover {
+			background-color: $base-color-button-background;
+			border-color: $base-color-button-border;
+		}
+	}
+
+	&.button-solid{
+		background-color: $base-color-button-background;
+		color: $base-color-button-text;
+
+		//&:focus,
+		&:hover{
+			background-color: $base-color-button-alternate;
+			border-color: $base-color-button-alternate;
+			color: $base-color-button-text;
+		}
+		&[disabled]{
+			//&:focus,
+			&:hover{
+				border-color: inherit;
+				color: $base-color-button-background;
+			}
+		}
+	}
+
+	&.button-clear {
+		background-color: transparent;
+		border-color: transparent;
+		color: $base-color-button-background;
+
+		&:focus,
+		&:hover{
+			background-color: transparent;
+			border-color: transparent;
+			color: $base-color-button-alternate;
+		}
+
+		&[disabled]{
+			&:focus,
+			&:hover{
+				color: $base-color-button-background;
+			}
+		}
+	}
+}

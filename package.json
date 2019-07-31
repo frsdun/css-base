@@ -1,0 +1,24 @@
+{
+    "name": "css-base",
+    "version": "1.0.0",
+    "description": "A simple css library that normalizes and provides basic styling",
+    "scripts": {
+        "build-scss": "node ./node_modules/node-sass/bin/node-sass ./scss/base.scss ./css/base.css",
+        "minify-css": "node ./node_modules/uglifycss/uglifycss ./css/base.css > ./css/base.min.css",
+        "build": "npm run build-scss && npm run minify-css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/frsdun/css-base.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/frsdun/css-base/issues"
+    },
+    "homepage": "https://github.com/frsdun/css-base#readme",
+    "devDependencies": {
+        "node-sass": "^4.12.0",
+        "uglifycss": "0.0.29"
+    }
+}

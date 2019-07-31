@@ -1,0 +1,61 @@
+/* ------------------------ Color ------------------------ */
+
+// Colours are defined in section 1, then assigned to elements section 2. 
+// There are no colours defined elsewhere in Base
+// Naming convention = $base-color-<file name>-<element>-<specialization>
+
+// 1. Specific colors
+
+// Colourful colors
+$base-color-global-primary:         #1890ff !default; //1890ff
+$base-color-global-primary-accent:  #2ba0ff !default; //2ba0ff
+// Grey-scale colors
+$base-color-global-white:           #fcfcfc !default; //fcfcfc
+$base-color-global-offwhite:        #edf0f3 !default; //edf0f3
+$base-color-global-lightgrey:       #c6c9cc !default; //c6c9cc
+$base-color-global-grey:            #787c80 !default; //c6c9cc
+$base-color-global-darkgrey:        #4B545C !default; //4B545C
+$base-color-global-black:           #252322 !default; //252322
+
+// 2. Elements
+$base-color-typography-text: $base-color-global-darkgrey !default;
+$base-color-typography-background: $base-color-global-white !default;
+$base-color-typography-text-muted: $base-color-global-grey !default;
+
+$base-color-blockquote-border: $base-color-global-primary !default;
+
+$base-color-code-text: $base-color-global-black;
+$base-color-code-background: $base-color-global-offwhite !default;
+$base-color-code-border: $base-color-global-primary !default;
+
+$base-color-divider: $base-color-global-lightgrey !default;
+
+$base-color-link: $base-color-global-primary !default;
+$base-color-link-hover: $base-color-global-darkgrey !default;
+$base-color-link-active: $base-color-global-primary !default;
+$base-color-link-visited: $base-color-global-primary-accent !default;
+
+$base-color-button-text: $base-color-global-white !default;
+$base-color-button-background: $base-color-global-primary !default;
+$base-color-button-background-alternate: $base-color-global-white !default;
+$base-color-button-border: $base-color-global-primary !default;
+$base-color-button-alternate: $base-color-global-darkgrey !default;
+
+$base-color-form-text: $base-color-global-black !default;
+$base-color-form-background: $base-color-global-offwhite !default;
+$base-color-form-border: $base-color-global-offwhite !default;
+$base-color-form-border-focus: $base-color-global-primary !default;
+$base-color-form-select-icon: $base-color-global-darkgrey !default;
+$base-color-form-select-icon-focus: $base-color-global-primary !default;
+
+$base-color-table-border: $base-color-global-lightgrey !default;
+
+$base-color-shadow: $base-color-global-darkgrey !default;
+$base-color-shadow-primary: $base-color-global-primary !default;
+
+// 3. Utility Elements
+//$base-color-utility-text: $base-color-grey !default;
+//$base-color-utility-color-primary: $base-color-primary !default;
+//$base-color-utility-color-light: $base-color-white !default;
+//$base-color-utility-color-dark: $base-color-black !default;
+//$base-color-utility-border: $base-color-primary !default;

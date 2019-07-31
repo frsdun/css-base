@@ -1,0 +1,21 @@
+/* ------------------------ Link ------------------------ */
+
+a{
+    color: $base-color-link;
+    text-decoration: none;
+    @extend %transition-all;
+    cursor: pointer;
+    
+    &:focus,
+    &:hover{
+        color: $base-color-link-hover;
+    }
+
+    &:active{
+        color: $base-color-link-active;
+    }
+    
+    &:visited{
+        color: $base-color-link-visited;
+    }
+}

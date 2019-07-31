@@ -1,0 +1,25 @@
+/* ------------------------ Code ------------------------ */
+
+code{
+    border-radius: .4rem;
+    margin: 0 .2rem;
+    padding: 0.8rem 1rem;
+    white-space: normal;
+    background-color: $base-color-code-background;
+    color: $base-color-code-text;
+}
+
+pre{
+	border-left: .3rem solid $base-color-code-border;
+	padding-left: 2rem;
+	overflow-y: hidden;
+	background-color: $base-color-code-background;
+	color: $base-color-code-text;
+
+	& > code{
+	    border-radius: 0;
+	    display: block;
+	    padding: 1rem 1.5rem;
+	    white-space: pre;
+	}
+}
