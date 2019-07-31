@@ -3,8 +3,9 @@ A simple css library that normalizes and provides basic styling
 
 Based on milligram v1.3.0 | MIT License | https://github.com/milligram/milligram
 
-Build it with: `npm run build`
+Build: `npm run build`
 
+### File structure
 ```
 css
 ├─── base.css
@@ -38,3 +39,7 @@ All other css effect tags directly (these are the only classes used)
 * `.button` (button) changes an anchor tag into a button
 * `.button-solid` (button) changes a button into a solid button
 * `.button-clear` (button) changes a button into a clear button
+
+### Dev dependencies
+* node-sass
+* uglifycss
